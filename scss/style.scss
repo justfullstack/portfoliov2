@@ -1,0 +1,18 @@
+@use 'custom';
+
+// import components from partials
+@use 'components/animations';
+@use 'components/buttons';
+@use 'components/typography';
+@use 'components/mixins';
+
+// import sections
+@use 'sections/navbar';
+@use 'sections/intro-section';
+@use 'sections/companies';
+@use 'sections/portfolio';
+@use 'sections/services';
+@use 'sections/testimonials';
+@use 'sections/get-started';
+@use 'sections/faq';
+@use 'sections/footer';
