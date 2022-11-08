@@ -10950,6 +10950,60 @@ textarea.form-control-lg {
   filter: grayscale(0);
 }
 
+.portfolio {
+  padding: 4rem 0;
+}
+.portfolio button {
+  text-transform: capitalize;
+}
+
+.portfolio-box {
+  position: relative;
+  height: 22.5rem;
+  width: minmax(18.5rem, 100%);
+  overflow: hidden;
+  margin: 0 auto;
+  margin-bottom: 1.2rem;
+  border-radius: 5px;
+  border-top: 0.5rem solid #BB6EF5;
+}
+.portfolio-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0 5px 5px 0;
+}
+.portfolio-box .portfolio-info {
+  background-color: rgba(153, 38, 240, 0.75);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  opacity: 0;
+  visibility: hidden;
+  cursor: pointer;
+  transition: all 1s;
+}
+.portfolio-box .portfolio-info .caption {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+}
+.portfolio-box .portfolio-info .caption h4 {
+  text-transform: uppercase;
+}
+.portfolio-box:hover .portfolio-info {
+  opacity: 1;
+  visibility: visible;
+}
+.portfolio-box:hover img {
+  transition: all 1s;
+  transform: scale(1.3);
+}
+
 .our-services {
   position: relative;
   padding: 1rem 0;
