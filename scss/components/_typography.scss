@@ -1,0 +1,32 @@
+@use "../custom" as *;
+@use "../components/mixins" as *;
+
+
+.display-2{
+    margin-bottom: 1rem;
+    text-transform: capitalize;
+    
+
+    &--intro{
+        display: inline-block;
+        font-weight: 700;
+        text-align: left;
+         font-family: 'Poppins', sans-serif;
+        // font-size: 115%; 
+        margin-top: 3rem;
+        
+    }
+
+    &--description{
+        margin-top: 1.5rem;
+        font-size: 1.2rem;
+        display: block;
+        text-transform: none;
+
+        @include media-breakpoint-up(lg){
+            font-size: 1.4rem; 
+            display: inline-block;   
+        }
+    }
+}
+

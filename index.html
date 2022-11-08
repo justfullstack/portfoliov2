@@ -10,8 +10,13 @@
 
         <!-- start css stylesheets -->
         <link rel="stylesheet" href="assets/css/fontawesome.css">
+        <link rel="stylesheet" href="assets/css/glightbox.min.css">
+        <link rel="stylesheet" href="assets/css/plyr.min.css">
         <link rel="stylesheet" href="assets/css/style.css">
         <!-- end css stylesheets -->
+
+        <!-- start fonts -->
+        <!-- end fonts -->
 
         <!--  start js scripts -->
         <script defer src="assets/js/bootstrap/bootstrap.bundle.js"></script>
@@ -19,17 +24,21 @@
     </head>
     <body>
         <!-- start navbar section -->
-        <nav class="navbar navbar-expand-lg navbar-dark menu shadow">
-            <div class="container-fluid"> 
+        <nav class="navbar navbar-expand-lg navbar-dark menu shadow fixed-top">
+            <div class="container-fluid flex-nowrap"> 
                 <a href="#" class="navbar-brand">
                     <img src="assets/img/logo.png" alt="Chege" width="155px" >
                 </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="navBarNav">
+                <button
+                class="navbar-toggler" 
+                type="button" 
+                data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarSupportedContent" aria-expanded="false" 
+                aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
             
 
-                <div class="collapse navbar-collapse justify-content-end" id="navBarNav">
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="navbar-item">
                             <a href="#" class="nav-link">
@@ -81,32 +90,70 @@
         <!-- end navbar section -->
 
         <!-- start intro section  -->
-        <div id="home" class="intro-section">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6 intros">
-
-                    </div>
-                    <div class="col-md-6 intros">
+        <section id="home" class="intro-section">
+            <div class="container ">
+                <div class="row   align-items-center text-white">
+                    <!-- start landing text -->
+                    <div class="col-md-6 intros  ">
                         <h1 class="display-2">
-                            <span class="display__2--intro">
+                            <span class="display-2--intro">
                                 Hi, I'm Chege
                             </span>
-                            <span class="display__2--description">
-                                I dod this and that to help clients up their businesses.
+                            <span class="display-2--description lh-base">
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem, maiores autem perspiciatis iure nihil, nemo magni accusantium nam animi fugiat.
                             </span>
                         </h1>
+                        <button type="button" class="rounded-pill btn-rounded">
+                            Get In Touch
+                            <span>
+                                <i class="fas fa-arrow-right"></i>
+                            </span>
+                        </button>
                     </div>
+                    <!-- end landing text -->
+
+
+                    <!-- start video content -->
+                    <!-- text-end position-absolute top-50 start-50 translate-middle border -->
+                    <div class="col-md-6   intros ">
+                        <div class="video-box">
+                            <img src="assets/img/art/intro-section-illustration.png" alt="video illustration" class="img-fluid">
+                            <a href="#" class="glightbox    position-absolute top-50 start-50 translate-middle d-flex" > 
+                                    <span>
+                                        <i class="fas fa-play-circle"></i> 
+                                    </span>
+                                    <span class="border-animation  border-animation--border-1 "></span> 
+                                    <span class="border-animation  border-animation--border-2 "></span> 
+                            </a> 
+                        </div>
+                    </div>
+                    <!-- end video content --> 
                 </div>
             </div>
+                <!-- start wave svg -->
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                    <path fill="#fff" fill-opacity="1" d="M0,64L48,96C96,128,192,192,288,202.7C384,213,480,171,576,133.3C672,96,768,64,864,80C960,96,1056,160,1152,154.7C1248,149,1344,75,1392,37.3L1440,0L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+                </svg>
+                <!-- end wave svg -->
         </div>
         <!-- end intro section  -->
 
+        <!-- start  -->
 
 
 
 
-        
+    
+    <script src="assets/js/glightbox.min.js"></script>
+    <script type="text/javascript">
+        const lightbox = GLightbox({
+            href: 'https://www.youtube.com/watch?v=Ga6RYejo6HK',
+            type: 'video',
+            source: 'youtube',
+            width: 900,
+            autoPlayVideos: 'true'
+        });
+    </script>   
     </body>
 </html>
 
