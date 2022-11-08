@@ -30,3 +30,35 @@
     }
 }
 
+.display-3{
+    font-family: 'Poppins', sans-serif;
+}
+
+// heading line
+.heading-line::before{
+    content: "";
+    width: 10rem;
+    height: 0.1rem;
+    display: block;
+    margin: 0 auto;
+    background: $primary;
+
+}
+
+.heading-line::after{
+    content: "";
+    width: 2rem;
+    height: 0.2rem;
+    padding-top: 0.4rem;
+    display: block;
+    margin: 0 auto;
+    background: $primary;
+    margin-bottom: 1rem;
+
+}
+
+// border-right
+.border-right{
+    border-right: 0.1rem solid $gray-300;
+    height: 100%;
+}
