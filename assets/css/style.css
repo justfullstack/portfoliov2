@@ -11191,4 +11191,30 @@ textarea.form-control-lg {
   color: #9926f0;
 }
 
+#backToTopContainer {
+  position: relative;
+}
+#backToTopContainer a {
+  background: linear-gradient(to right, rgba(153, 38, 240, 0.95), rgba(209, 34, 227, 0.95));
+  width: 4rem;
+  height: 4rem;
+  color: #343a40;
+  text-align: center;
+  border-radius: 50%;
+  position: fixed;
+  right: 2%;
+  bottom: 2%;
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+#backToTopContainer a:hover {
+  color: #fff;
+}
+#backToTopContainer a:active i {
+  transform: scale(0.95);
+}
+
 /*# sourceMappingURL=style.css.map */
