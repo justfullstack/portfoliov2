@@ -11164,4 +11164,31 @@ textarea.form-control-lg {
   }
 }
 
+.footer {
+  padding-top: 1rem;
+  background: #151414;
+}
+.footer .contact-box__info--subtitle {
+  color: rgba(209, 209, 209, 0.272);
+  font-size: 0.9em;
+}
+.footer .social-media-header {
+  display: flex;
+  background: linear-gradient(to right, rgba(153, 38, 240, 0.95), rgba(209, 34, 227, 0.95));
+  height: 100%;
+}
+@media (max-width: 767.98px) {
+  .footer .footer-social-links {
+    text-align: center;
+  }
+}
+
+.project-list li {
+  margin-bottom: 0.5rem;
+  text-decoration: none;
+}
+.project-list a:hover {
+  color: #9926f0;
+}
+
 /*# sourceMappingURL=style.css.map */

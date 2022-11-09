@@ -1,0 +1,43 @@
+@use "../custom" as *;
+@use "../components/mixins" as *;
+
+.footer{
+    padding-top: 1rem;
+    background: $footer;
+
+
+    .contact-box__info--subtitle{
+        color: rgba(209, 209, 209, 0.272);
+        font-size: 0.9em;
+    }
+
+    //  style social media
+    .social-media-header{
+        display: flex;
+        @include gradient;
+        height:100%;
+    }
+
+    .footer-social-links{
+        @include media-breakpoint-down(md){
+            text-align: center;
+        }
+    }
+
+
+
+}
+
+
+
+.project-list{
+    li{
+        margin-bottom: 0.5rem;
+        text-decoration: none;
+    }
+    a{
+        &:hover{
+            color: $primary;
+        }
+    }
+}
