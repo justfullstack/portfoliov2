@@ -1,7 +1,6 @@
 @use 'custom';
 
-// global
-@use 'sections/global';
+
 
 // import components from partials
 @use 'components/animations';
@@ -20,3 +19,6 @@
 @use 'sections/faq';
 @use 'sections/footer';
 @use 'sections/back_to_top';
+
+// global
+@use 'sections/global';
