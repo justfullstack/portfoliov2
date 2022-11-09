@@ -1,5 +1,8 @@
 @use 'custom';
 
+// global
+@use 'sections/global';
+
 // import components from partials
 @use 'components/animations';
 @use 'components/buttons';

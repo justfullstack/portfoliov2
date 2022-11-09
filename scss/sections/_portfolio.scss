@@ -3,10 +3,15 @@
 
 .portfolio{
     padding: 4rem 0;
+    transition: display 1s;
     
     button{
         text-transform: capitalize;
     }
+}
+
+.projects-container{
+    transition: 1s;
 }
 
 
