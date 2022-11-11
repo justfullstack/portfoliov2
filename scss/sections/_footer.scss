@@ -6,6 +6,12 @@
     background: $footer;
 
 
+    a{
+        &:hover{
+            color: $primary;
+        }
+    }
+
     .contact-box__info--subtitle{
         color: rgba(209, 209, 209, 0.272);
         font-size: 0.9em;

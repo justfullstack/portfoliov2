@@ -2,7 +2,7 @@
   "name": "portfolio-v2",
   "version": "1.0.0",
   "description": "Second Iteration of my Portfolio",
-  "main": "index.js",
+  "default": "index.html",
   "scripts": {
     "compile-sass": "sass --watch scss:assets/css"
   },
@@ -15,11 +15,19 @@
     "framework",
     "web"
   ],
+
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html --dist-dir ./dist"
+  },
+
   "author": "Chege CJN",
   "license": "ISC",
   "devDependencies": {
+    "parcel": "^2.0.0-beta.1",
     "sass": "^1.56.0"
   },
+  
   "dependencies": {
     "@fortawesome/fontawesome-free": "^6.2.0",
     "autoprefixer": "^10.4.13",
@@ -27,3 +35,9 @@
     "postcss-cli": "^10.0.0"
   }
 }
+
+
+
+
+
+

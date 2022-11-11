@@ -10900,6 +10900,16 @@ textarea.form-control-lg {
   font-weight: 600;
 }
 
+.navbar-brand {
+  font-family: "Poppins", sans-serif;
+  color: #dee2e6;
+  font-size: 2.6rem;
+}
+
+.navbar {
+  align-items: center;
+}
+
 .intro-section {
   background: linear-gradient(to right, rgba(153, 38, 240, 0.95), rgba(209, 34, 227, 0.95));
   padding: 10rem 0 0 0;
@@ -11177,6 +11187,9 @@ textarea.form-control-lg {
 .footer {
   padding-top: 1rem;
   background: #151414;
+}
+.footer a:hover {
+  color: #9926f0;
 }
 .footer .contact-box__info--subtitle {
   color: rgba(209, 209, 209, 0.272);
