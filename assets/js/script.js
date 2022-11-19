@@ -8,6 +8,28 @@ const btnBackend = document.querySelector(".btn-backend");
 const btnFullstack = document.querySelector(".btn-fullstack");
 console.log(categoryButtons);
 
+
+
+
+// navbar toggler
+const toggler = document.querySelector(".navbar-toggler");
+const collapse = document.querySelector(".collapse");
+console.log(toggler);
+
+toggler.addEventListener('click', function(){
+    console.log(this);
+    this.classList.toggle("active");
+    collapse.classList.toggle("border-top");
+    collapse.classList.toggle("border-bottom");
+});
+
+
+
+
+
+
+
+// portfolio filter
 categoryButtons.addEventListener('click', (e) => { 
 
     // all
@@ -22,7 +44,7 @@ categoryButtons.addEventListener('click', (e) => {
 
     // front end
     if (e.target === btnFrontend){
-        projects.forEach((project) => {
+        projects.forEach((project) => { 
             if(!project.classList.contains("front-end")){
                 project.classList.add("hidden");
             } else {

@@ -10797,7 +10797,7 @@ textarea.form-control-lg {
 }
 .btn-rounded span {
   position: absolute;
-  background-color: #9926f0;
+  background-color: #d122e3;
   width: 2.5rem;
   height: 2.5rem;
   top: 50%;
@@ -10902,12 +10902,72 @@ textarea.form-control-lg {
 
 .navbar-brand {
   font-family: "Poppins", sans-serif;
-  color: #dee2e6;
+  color: rgba(255, 255, 255, 0.7);
   font-size: 2.6rem;
 }
 
 .navbar {
   align-items: center;
+}
+.navbar .navbar-toggler {
+  transition: 1s;
+  display: flex;
+  flex-direction: column;
+  border: none;
+  outline: none;
+  box-shadow: none;
+  gap: 0.3rem;
+}
+@media (min-width: 768px) {
+  .navbar .navbar-toggler {
+    display: none;
+  }
+}
+.navbar .navbar-toggler:hover-bar {
+  background: #fff;
+}
+.navbar .navbar-toggler-bar {
+  transition: 1s;
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 10px;
+  height: 0.21rem;
+  width: 2rem;
+}
+.navbar .navbar-toggler .bar-1 {
+  width: 2rem;
+}
+.navbar .navbar-toggler .bar-2 {
+  width: 1.7rem;
+}
+.navbar .navbar-toggler .bar-3 {
+  width: 1.5rem;
+}
+.navbar .navbar-toggler.active {
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
+.navbar .navbar-toggler.active .bar-2 {
+  width: 1.5rem;
+}
+.navbar .navbar-toggler.active .bar-1 {
+  width: 1.3rem;
+}
+.navbar .navbar-toggler.active .bar-3 {
+  width: 2rem;
+}
+.navbar .nav-link {
+  font-size: 1.4rem;
+  color: #e9ecef;
+  text-align: center;
+  display: block;
+}
+.navbar .nav-link:hover {
+  transition: 1s;
+  border: 1px solid #9926f0;
+  border-radius: 5px;
+  background: linear-gradient(to right, rgba(153, 38, 240, 0.95), rgba(209, 34, 227, 0.95));
+  color: #dee2e6;
 }
 
 .intro-section {

@@ -22,10 +22,105 @@
 
 .navbar-brand{
     font-family: 'Poppins', sans-serif;
-    color: $gray-300;
+    color: rgba($white,0.7);
     font-size: 2.6rem;
 }
 
 .navbar{
     align-items: center;
+
+    .navbar-toggler{
+        transition: 1s;
+        display: flex;
+        flex-direction: column;
+        border: none; 
+        outline: none;
+        box-shadow: none;
+        gap: 0.3rem;
+
+        @include media-breakpoint-up(md){
+            display: none;
+        }
+
+        &:hover{
+            &-bar{
+                background: $white;
+            }
+        }
+
+
+
+        &-bar{
+            transition: 1s;
+            background: rgba($white,0.7);
+            border-radius: 10px;
+            height: 0.21rem;
+            width: 2rem;
+        }
+
+        .bar-1{
+            width: 2rem;
+        }
+
+        .bar-2{
+            width: 1.7rem;
+        }
+
+        .bar-3{
+            width: 1.5rem;
+        }
+    }
+
+    .navbar-toggler.active{
+        border: none;
+        outline: none;
+        box-shadow: none;
+
+        
+
+        
+
+        .bar-2{
+            // display: none;
+            width: 1.5rem;
+        }
+
+        .bar-1{
+            // transform: rotate(45deg);
+            width: 1.3rem;
+        }
+
+        .bar-3{
+            // transform: rotate(-45deg);
+            width: 2rem;
+        }
+    }
+
+    .nav-link{
+        font-size: 1.4rem;
+        color: $gray-200;
+        text-align: center;
+        display: block;
+
+        &:hover{
+            transition: 1s;
+            border : 1px solid $primary;
+            border-radius: 5px;
+            @include gradient;
+            color: $gray-300;
+        }
+
+        
+    }
+
+
+     
 }
+
+ 
+.collapse{
+    // height: 80vh; 
+    }
+
+
+
